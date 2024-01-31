@@ -1,0 +1,122 @@
+/* ¡Reseteo de estilos para quitar esos molestos márgenes y rellenos por defecto! */
+body, h1, h2, p, textarea, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ah, los básicos estilos para el cuerpo del documento */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f5fe; /* Este azul claro nos sirve de fondo tranquilo */
+}
+
+/* Aquí le damos onda al encabezado */
+header {
+    background-color: #4285f4; /* Un azul más suavecito para el encabezado */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alineamos todo bien bonito en el encabezado */
+}
+
+/* Y, por supuesto, estilos para nuestro logo en el encabezado */
+header img {
+    margin-bottom: 10px; /* Le damos un toque de espacio entre el logo y el texto */
+    max-width: 200px; /* Limitamos el tamaño máximo del logo para que no se vea ni muy grande ni muy chiquito */
+}
+
+/* Cambiando al área principal, le damos estructura y colorcito */
+main {
+    display: flex;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff; /* Un blanco suave para el área principal */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Para el formulario, jugamos con flex para una distribución más elegante */
+#formulario {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333; /* Usamos un toque más oscuro para las etiquetas */
+}
+
+textarea {
+    width: 100%;
+    height: 80%;
+    padding: 2px;
+    margin-bottom: 10px; /* Damos un espacio armonioso entre el textarea y los botones */
+    border: 1px solid #90a4ae; /* Un azul grisáceo para el borde del textarea */
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #ffffff; /* Blanco, para que resalte con estilo */
+    color: #1565c0; /* Azul oscuro, un color elegante */
+    border: 2px solid #1565c0; /* Borde azul oscuro para darle forma al botón */
+    border-radius: 20px; /* Y un borde curvo, ¡para que se vea bonito! */
+    cursor: pointer;
+    margin-bottom: 10px; /* Le damos su espacio para respirar entre botones */
+    transition: background-color 0.3s, color 0.3s; /* Efecto de transición para suavizar cambios */
+}
+
+button:hover {
+    background-color: #1565c0; /* Un cambio de colorcito al pasar el ratón para que se note que es clickeable */
+    color: #ffffff; /* Y el texto en blanco para que resalte sobre el color del botón */
+}
+
+/* Vamos al área de resultado, donde todo se alinea al centro y se ve bien bonito */
+#resultadoArea {
+    text-align: center;
+    flex: 1;
+    background-color: #ffffff; /* Blanco nuevamente, para mantener la coherencia */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#imagenResultado {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+#resultadoTexto {
+    display: none;
+    margin-bottom: 10px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #4285f4; /* Azul más claro para el pie de página */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Estilos adicionales para el footer */
+footer p {
+    margin: 0; /* Eliminar márgenes predeterminados */
+}
+
+footer small {
+    font-size: 12px; /* Tamaño de fuente más pequeño para el texto de copyright */
+}
